@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 32px 0;
+  padding: 0 32px 0;
   color: rgb(61, 61, 61);
 }
 
@@ -22,13 +22,26 @@ body {
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
-.orange-area {
+.orange-square {
+  height: 300px;
+  width: 100vw;
   background-color: rgba(255, 160, 122, 0.816);
   position: absolute;
-  height: 50vh;
-  width: 200vw;
-  transform: translate(-50vw, -20vh) rotate(-10deg);
   z-index: -1;
+}
+
+.orange-triangle {
+  height: 0;
+  width: 0;
+  border-left: 100vw solid rgba(255, 160, 122, 0.816);
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  transform: translateY(300px);
+  z-index: -1;
+}
+
+header {
+  margin-top: 32px;
 }
 
 .header-image {
@@ -45,6 +58,7 @@ body {
   position: relative;
   top: -70px;
   left: 10px;
+  width: max-content;
 }
 
 section {
@@ -78,6 +92,7 @@ h2 {
   gap: 8px;
   box-shadow: 1px 2px 4px 1px lightgray;
   min-width: 275px;
+  max-width: 70vw;
 }
 
 .project img {
@@ -133,5 +148,5 @@ address a {
 
 .footer-image {
   width: 100vw;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
