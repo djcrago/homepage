@@ -55,13 +55,40 @@ h2 {
 }
 
 .my-work {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   margin-top: 64px;
 }
 
 .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   box-shadow: 1px 2px 4px 1px lightgray;
+  min-width: 275px;
 }
 
-.project > img {
-  width: 250px;
+.project img {
+  max-width: 70vw;
+}
+
+.info {
+  align-self: stretch;
+  padding: 12px;
+  background-color: rgba(255, 160, 122, 0.168);
+}
+
+.info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.info nav {
+  display: flex;
+  gap: 8px;
 }
