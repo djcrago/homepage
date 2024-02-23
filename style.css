@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url(./fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./fonts/Roboto-Regular.ttf);
+}
