@@ -51,5 +51,17 @@ h2 {
 }
 
 .icon {
-  width: 40px;
+  width: 30px;
+}
+
+.my-work {
+  margin-top: 64px;
+}
+
+.project {
+  box-shadow: 1px 2px 4px 1px lightgray;
+}
+
+.project > img {
+  width: 250px;
 }
