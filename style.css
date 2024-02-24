@@ -110,7 +110,7 @@ h2 {
 
 .info {
   align-self: stretch;
-  padding: 12px;
+  padding: 8px;
   background-color: rgba(255, 160, 122, 0.168);
 }
 
@@ -160,10 +160,6 @@ address a {
 }
 
 @media (min-width: 600px) {
-  body {
-    font-size: 1.2rem;
-  }
-
   header {
     position: absolute;
     left: 5vw;
@@ -179,11 +175,14 @@ address a {
   }
 
   .about-me {
+    position: relative;
+    right: -5vw;
     box-shadow: 1px 2px 4px 1px lightgray;
     background-color: white;
-    padding: 16px 16px 16px 225px;
-    width: 70vw;
+    padding: 16px 16px 16px 250px;
+    width: 80vw;
     margin-top: 15vh;
+    z-index: -1;
   }
 
   .my-work {
@@ -197,7 +196,7 @@ address a {
 
   .project,
   .project img {
-    max-width: 40vw;
+    max-width: 30vw;
   }
 
   footer {
@@ -215,32 +214,32 @@ address a {
 }
 
 @media (min-width: 1000px) {
-  body {
-    font-size: 1.4rem;
+  .orange-square {
+    height: 400px;
   }
 
-  .header-image {
-    height: 500px;
+  .orange-triangle {
+    transform: translateY(400px);
   }
 
   .header-text {
-    font-size: 5rem;
-    top: -125px;
-    left: 50px;
-  }
-
-  .about-me {
-    padding: 32px;
-    width: 55vw;
-    margin: 4vh 0 0 42vw;
+    top: -75px;
+    left: 30px;
   }
 
   .my-work {
     margin-top: 128px;
   }
 
+  .about-me {
+    right: -10vw;
+    top: -10vh;
+    padding: 32px;
+    width: 55vw;
+  }
+
   .my-work > h2 {
-    left: 6vw;
+    left: 5vw;
   }
 
   .project,
@@ -249,6 +248,7 @@ address a {
   }
 
   .contact-info {
-    padding: 64px;
+    padding: 48px;
+    font-size: 1.3rem;
   }
 }
