@@ -213,3 +213,42 @@ address a {
     width: 50vw;
   }
 }
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 1.4rem;
+  }
+
+  .header-image {
+    height: 500px;
+  }
+
+  .header-text {
+    font-size: 5rem;
+    top: -125px;
+    left: 50px;
+  }
+
+  .about-me {
+    padding: 32px;
+    width: 55vw;
+    margin: 4vh 0 0 42vw;
+  }
+
+  .my-work {
+    margin-top: 128px;
+  }
+
+  .my-work > h2 {
+    left: 6vw;
+  }
+
+  .project,
+  .project img {
+    max-width: 25vw;
+  }
+
+  .contact-info {
+    padding: 64px;
+  }
+}
